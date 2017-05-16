@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('početna');
+  this.route('početna', {path: '/'}); //Ucitava pocetnu stranicu pri prvom ulasku na stranicu
   this.route('pregledpatrola');
   this.route('pomoć');
   this.route('onama');
