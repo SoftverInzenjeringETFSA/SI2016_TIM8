@@ -1,0 +1,5 @@
+etf\unsa\Controllers\KorisnikController.class
+etf\unsa\exception\EntityNotFoundException.class
+etf\unsa\StartApplication.class
+etf\unsa\Klase\Korisnik.class
+etf\unsa\store\KorisniciHardkodirano.class
