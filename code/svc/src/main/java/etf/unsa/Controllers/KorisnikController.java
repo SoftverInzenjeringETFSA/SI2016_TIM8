@@ -19,11 +19,16 @@ public class KorisnikController {
 		this.userService = userService;
 	}
 
-	@RequestMapping(path="/get/all", method = RequestMethod.GET)
+	@RequestMapping(path="/get/users/all", method = RequestMethod.GET)
 	public List<Korisnik> findAll() {
 		List<Korisnik> korisnici;
 		korisnici = (List<Korisnik>) userService.findAll();
 		return korisnici;
+	}
+
+	@RequestMapping(path="/get/users/{id}", method = RequestMethod.GET)
+	public Korisnik getKorisnik(@PathVariable("id") Integer id){
+		return userService.findKorisnik(id);
 	}
 
 	@RequestMapping(path = "/delete", method = RequestMethod.GET)
