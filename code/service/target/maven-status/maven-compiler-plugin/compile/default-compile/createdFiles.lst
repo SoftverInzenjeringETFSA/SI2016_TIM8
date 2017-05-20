@@ -1,0 +1,5 @@
+etf\si\repositories\KorisnikRepository.class
+etf\si\StartApplication.class
+etf\si\controllers\KorisnikController.class
+etf\si\services\KorisnikService.class
+etf\si\models\Korisnik.class

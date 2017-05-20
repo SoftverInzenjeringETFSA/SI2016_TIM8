@@ -19,7 +19,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `tim8`
 --
+CREATE DATABASE IF NOT EXISTS `tim8` DEFAULT CHARACTER SET utf8 COLLATE utf8_slovenian_ci;
 
+USE `tim8`;
 -- --------------------------------------------------------
 
 --
@@ -28,9 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `komentar` (
   `id` int(11) NOT NULL,
-  `idKorisnika` int(11) NOT NULL,
-  `idLokacije` int(11) NOT NULL,
-  `komentar` varchar(255) NOT NULL
+  `id_korisnika` int(11) NOT NULL,
+  `id_lokacije` int(11) NOT NULL,
+  `tekst` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -43,13 +45,13 @@ CREATE TABLE `korisnik` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `imeIPrezime` varchar(255) NOT NULL,
+  `ime_prezime` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `brojTacnihPrijava` int(11) NOT NULL,
-  `brojNetacnihPrijava` int(11) NOT NULL,
+  `broj_tacnih_prijava` int(11) NOT NULL,
+  `broj_netacnih_prijava` int(11) NOT NULL,
   `ocjena` double NOT NULL,
   `admin` BIT(1) NOT NULL,
-  `superAdmin` BIT(1) NOT NULL
+  `super_admin` BIT(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -71,11 +73,11 @@ CREATE TABLE `lokacija` (
 
 CREATE TABLE `odjavapolozaja` (
   `id` int(11) NOT NULL,
-  `korisnikId` int(11) NOT NULL,
-  `lokacijaId` int(11) NOT NULL,
-  `vrijemeOdjave` int(11) NOT NULL,
-  `ispravnostOdjave` int(2) NOT NULL,
-  `idPrijave` int(11) NOT NULL
+  `id_korisnika` int(11) NOT NULL,
+  `id_lokacije` int(11) NOT NULL,
+  `vrijeme_odjave` int(11) NOT NULL,
+  `ispravnost_odjave` int(2) NOT NULL,
+  `id_prijave` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -86,11 +88,11 @@ CREATE TABLE `odjavapolozaja` (
 
 CREATE TABLE `prijavapolozaja` (
   `id` int(11) NOT NULL,
-  `korisnikId` int(11) NOT NULL,
-  `lokacijaId` int(11) NOT NULL,
-  `vrstaKontrole` varchar(255) DEFAULT NULL,
-  `vrijemePrijave` time NOT NULL,
-  `ispravnostPrijave` int(2) NOT NULL
+  `id_korisnika` int(11) NOT NULL,
+  `id_lokacije` int(11) NOT NULL,
+  `vrsta_kontrole` varchar(255) DEFAULT NULL,
+  `vrijeme_prijave` time NOT NULL,
+  `ispravnost_prijave` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -102,15 +104,14 @@ CREATE TABLE `prijavapolozaja` (
 --
 ALTER TABLE `komentar`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `idKorisnika` (`idKorisnika`),
-  ADD KEY `idLokacije` (`idLokacije`);
+  ADD KEY `id_korisnika` (`id_korisnika`),
+  ADD KEY `id_lokacije` (`id_lokacije`);
 
 --
 -- Indexes for table `korisnik`
 --
 ALTER TABLE `korisnik`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `lokacija`
@@ -123,17 +124,17 @@ ALTER TABLE `lokacija`
 --
 ALTER TABLE `odjavapolozaja`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `korisnikId` (`korisnikId`),
-  ADD KEY `lokacijaId` (`lokacijaId`),
-  ADD KEY `idPrijave` (`idPrijave`);
+  ADD KEY `id_korisnika` (`id_korisnika`),
+  ADD KEY `id_lokacije` (`id_lokacije`),
+  ADD KEY `id_prijave` (`id_prijave`);
 
 --
 -- Indexes for table `prijavapolozaja`
 --
 ALTER TABLE `prijavapolozaja`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `korisnikId` (`korisnikId`),
-  ADD KEY `lokacijaId` (`lokacijaId`);
+  ADD KEY `id_korisnika` (`id_korisnika`),
+  ADD KEY `id_lokacije` (`id_lokacije`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -172,23 +173,23 @@ ALTER TABLE `prijavapolozaja`
 -- Constraints for table `komentar`
 --
 ALTER TABLE `komentar`
-  ADD CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`idKorisnika`) REFERENCES `korisnik` (`id`),
-  ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`idLokacije`) REFERENCES `lokacija` (`id`);
+  ADD CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
+  ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`id_lokacije`) REFERENCES `lokacija` (`id`);
 
 --
 -- Constraints for table `odjavapolozaja`
 --
 ALTER TABLE `odjavapolozaja`
-  ADD CONSTRAINT `odjavapolozaja_ibfk_1` FOREIGN KEY (`korisnikId`) REFERENCES `korisnik` (`id`),
-  ADD CONSTRAINT `odjavapolozaja_ibfk_2` FOREIGN KEY (`lokacijaId`) REFERENCES `lokacija` (`id`),
-  ADD CONSTRAINT `odjavapolozaja_ibfk_3` FOREIGN KEY (`idPrijave`) REFERENCES `prijavapolozaja` (`id`);
+  ADD CONSTRAINT `odjavapolozaja_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
+  ADD CONSTRAINT `odjavapolozaja_ibfk_2` FOREIGN KEY (`id_lokacije`) REFERENCES `lokacija` (`id`),
+  ADD CONSTRAINT `odjavapolozaja_ibfk_3` FOREIGN KEY (`id_prijave`) REFERENCES `prijavapolozaja` (`id`);
 
 --
 -- Constraints for table `prijavapolozaja`
 --
 ALTER TABLE `prijavapolozaja`
-  ADD CONSTRAINT `prijavapolozaja_ibfk_1` FOREIGN KEY (`korisnikId`) REFERENCES `korisnik` (`id`),
-  ADD CONSTRAINT `prijavapolozaja_ibfk_2` FOREIGN KEY (`lokacijaId`) REFERENCES `lokacija` (`id`);
+  ADD CONSTRAINT `prijavapolozaja_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
+  ADD CONSTRAINT `prijavapolozaja_ibfk_2` FOREIGN KEY (`id_lokacije`) REFERENCES `lokacija` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
