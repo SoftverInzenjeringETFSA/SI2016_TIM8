@@ -48,8 +48,8 @@ CREATE TABLE `korisnik` (
   `brojTacnihPrijava` int(11) NOT NULL,
   `brojNetacnihPrijava` int(11) NOT NULL,
   `ocjena` double NOT NULL,
-  `admin` int(2) NOT NULL,
-  `superAdmin` int(2) NOT NULL
+  `admin` BIT(1) NOT NULL,
+  `superAdmin` BIT(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
