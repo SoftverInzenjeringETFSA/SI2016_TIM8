@@ -1,11 +1,9 @@
 package etf.unsa.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name="korisnik")
 public class Korisnik {
 
     @Id

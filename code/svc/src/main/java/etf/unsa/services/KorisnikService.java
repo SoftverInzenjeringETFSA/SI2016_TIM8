@@ -32,6 +32,10 @@ public class KorisnikService {
         userRepo.delete(k);
     }
 
+    public void deleteKorisnik(Integer id){
+        userRepo.delete(userRepo.findOne(id));
+    }
+
     public Boolean updateKorisnik(Korisnik k){
         userRepo.save(k);
         return true;
