@@ -1,5 +1,6 @@
-C:\Users\Milan\Documents\tim8\PrijavaPolozajaPolicijskeKontrole\src\main\java\etf\unsa\exception\EntityNotFoundException.java
-C:\Users\Milan\Documents\tim8\PrijavaPolozajaPolicijskeKontrole\src\main\java\etf\unsa\StartApplication.java
-C:\Users\Milan\Documents\tim8\PrijavaPolozajaPolicijskeKontrole\src\main\java\etf\unsa\Controllers\KorisnikController.java
-C:\Users\Milan\Documents\tim8\PrijavaPolozajaPolicijskeKontrole\src\main\java\etf\unsa\store\KorisniciHardkodirano.java
-C:\Users\Milan\Documents\tim8\PrijavaPolozajaPolicijskeKontrole\src\main\java\etf\unsa\Klase\Korisnik.java
+C:\Users\Lejla\Documents\GitHub\SI2016_TIM8\code\svc\src\main\java\etf\unsa\controllers\KorisnikController.java
+C:\Users\Lejla\Documents\GitHub\SI2016_TIM8\code\svc\src\main\java\etf\unsa\exception\EntityNotFoundException.java
+C:\Users\Lejla\Documents\GitHub\SI2016_TIM8\code\svc\src\main\java\etf\unsa\StartApplication.java
+C:\Users\Lejla\Documents\GitHub\SI2016_TIM8\code\svc\src\main\java\etf\unsa\models\Korisnik.java
+C:\Users\Lejla\Documents\GitHub\SI2016_TIM8\code\svc\src\main\java\etf\unsa\services\KorisnikService.java
+C:\Users\Lejla\Documents\GitHub\SI2016_TIM8\code\svc\src\main\java\etf\unsa\repositories\KorisnikRepository.java

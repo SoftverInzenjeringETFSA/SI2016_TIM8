@@ -1,6 +1,6 @@
 package etf.unsa.controllers;
+
 import etf.unsa.models.Korisnik;
-import etf.unsa.repositories.KorisnikRepository;
 import etf.unsa.services.KorisnikService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/korisnici")
+@RequestMapping(path= "/korisnici")
 public class KorisnikController {
 
 	@Autowired
@@ -36,6 +36,4 @@ public class KorisnikController {
 		userService.deleteKorisnik(id);
 		return "Done";
 	}
-
-
 }

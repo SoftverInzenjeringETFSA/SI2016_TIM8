@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 public class KorisnikService {
 
     @Autowired
-    KorisnikRepository userRepo;
+    private KorisnikRepository userRepo;
 
     public Iterable<Korisnik> findAll(){
         return userRepo.findAll();

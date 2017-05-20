@@ -1,17 +1,18 @@
 package etf.unsa.models;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="korisnik")
-public class Korisnik {
+public class Korisnik implements Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
+    @Column(name="id")
     private Integer id;
 
-	private String ime;
-    private String prezime;
+	private String fullName;
     private String username;
     private String password;
     private String email;
@@ -24,10 +25,9 @@ public class Korisnik {
     private Boolean admin;
     private Boolean superAdmin;
 
-	public Korisnik(String ime, String prezime, String username, String password, String email, Integer brojTacnihPrijava,
+	public Korisnik(String ime, String username, String password, String email, Integer brojTacnihPrijava,
 					Integer brojNetacnihPrijava, Double ocjena,  Boolean admin, Boolean superAdmin) {
-		this.ime = ime;
-		this.prezime = prezime;
+		this.fullName = ime;
 		this.username = username;
 		this.password = password;
 		this.email = email;
@@ -38,11 +38,10 @@ public class Korisnik {
 		this.superAdmin = superAdmin;
 	}
 
-	public Korisnik(String ime, String prezime, String username, String password, String email) {
+	public Korisnik(String ime, String username, String password, String email) {
 		super();
-		this.ime = ime;
-		this.prezime = prezime;
-		this.username = username;
+        this.fullName = ime;
+        this.username = username;
 		this.password = password;
 		this.email = email;
 	}
@@ -55,17 +54,10 @@ public class Korisnik {
     }
 
 	public String getIme() {
-		return ime;
+		return fullName;
 	}
 	public void setIme(String ime) {
-		this.ime = ime;
-	}
-
-	public String getPrezime() {
-		return prezime;
-	}
-	public void setPrezime(String prezime) {
-		this.prezime = prezime;
+		this.fullName = ime;
 	}
 
 	public String getUsername() {
@@ -126,7 +118,7 @@ public class Korisnik {
 
     @Override
     public String toString() {
-      return "Korisnik [ime=" + ime + ", prezime=" + prezime+"]";
+      return "Korisnik [ime i prezime: " + fullName + "]";
     }
 
     //TODO: Metoda za izračunavanje ocjene na osnovu broja tacnih i netacnih prijava
