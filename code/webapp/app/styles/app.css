@@ -1,6 +1,7 @@
 body {
   max-height: 2000px;
-  padding-top: 70px;
+  padding-top: 50px;
+  overflow-x: hidden;
 }
 
 form
@@ -53,7 +54,7 @@ form
 
 #meni
 {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #meni1
@@ -82,11 +83,11 @@ form
 }
 
 
-#ruka
+#pocetna
 {
-  margin-left: 30%;
-  margin-top: 20px;
+  margin: 0px auto;
 }
+
 
 .pocetna_pitanje
 {
