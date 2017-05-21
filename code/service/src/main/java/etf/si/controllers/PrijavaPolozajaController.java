@@ -11,10 +11,10 @@ import etf.si.models.PrijavaPolozaja;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path= "/prijavapolozaja")
+@RequestMapping(path= "/patrole")
 public class PrijavaPolozajaController {
-    @Autowired
 
+    @Autowired
     private PrijavaPolozajaService prijavaPolozajaService;
 
     public void setPrijavaPolozajaService (PrijavaPolozajaService prService) {this.prijavaPolozajaService=prService;}
@@ -22,18 +22,19 @@ public class PrijavaPolozajaController {
     @RequestMapping(path="/get/all", method = RequestMethod.GET)
     public List<PrijavaPolozaja> findAll() {
         List<PrijavaPolozaja> polozajiPrijava;
-        polozajiPrijava = (List<PrijavaPolozaja>) PrijavaPolozajaService.findAll();
+        polozajiPrijava = (List<PrijavaPolozaja>) prijavaPolozajaService.findAll();
         return polozajiPrijava;
     }
 
     @RequestMapping(path="/get/{id}", method = RequestMethod.GET)
     public PrijavaPolozaja getPrijavaPolozaja(@PathVariable("id") Integer id){
-        return PrijavaPolozajaService.findPrijavaPolozaja(id);
+        return prijavaPolozajaService.findPrijavaPolozaja(id);
     }
 
     @RequestMapping(path = "/delete", method = RequestMethod.GET)
     public String deletePrijavaPolozaja(@RequestParam(name = "id") Integer id) {
-        PrijavaPolozajaService.deletePrijavaPolozaja(id);
+        prijavaPolozajaService.deletePrijavaPolozaja(id);
         return "Done";
     }
+
 }

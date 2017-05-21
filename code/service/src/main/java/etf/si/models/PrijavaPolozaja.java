@@ -13,18 +13,24 @@ public class PrijavaPolozaja implements Serializable {
     @Column(name = "id")
     private Integer id;
 
-    private Integer korisnik_id;
-    private Integer lokacija_id;
+    @ManyToOne
+    @JoinColumn(name="id_korisnika")
+    private Korisnik korisnik;
+
+    @ManyToOne
+    @JoinColumn(name="id_lokacije")
+    private Lokacija lokacija;
+
     private String vrsta_kontrole;
     private Time vrijeme_prijave;
     private Integer ispravnost_prijave;
 
     public PrijavaPolozaja () {}
 
-    public PrijavaPolozaja(Integer id, Integer korisnik_id, Integer lokacija_id, String vrsta_kontrole, Time vrijeme_prijave, Integer ispravnost_prijave) {
+    public PrijavaPolozaja(Integer id, Korisnik k, Lokacija l, String vrsta_kontrole, Time vrijeme_prijave, Integer ispravnost_prijave) {
         this.id = id;
-        this.korisnik_id = korisnik_id;
-        this.lokacija_id = lokacija_id;
+        this.korisnik = k;
+        this.lokacija = l;
         this.vrsta_kontrole = vrsta_kontrole;
         this.vrijeme_prijave = vrijeme_prijave;
         this.ispravnost_prijave = ispravnost_prijave;
@@ -38,20 +44,20 @@ public class PrijavaPolozaja implements Serializable {
         this.id = id;
     }
 
-    public Integer getKorisnik_id() {
-        return korisnik_id;
+    public Korisnik getKorisnik() {
+        return korisnik;
     }
 
-    public void setKorisnik_id(Integer korisnik_id) {
-        this.korisnik_id = korisnik_id;
+    public void setKorisnik(Korisnik k) {
+        this.korisnik = k;
     }
 
-    public Integer getLokacija_id() {
-        return lokacija_id;
+    public Lokacija getLokacija() {
+        return lokacija;
     }
 
-    public void setLokacija_id(Integer lokacija_id) {
-        this.lokacija_id = lokacija_id;
+    public void setLokacija(Lokacija l) {
+        this.lokacija = l;
     }
 
     public String getVrsta_kontrole() {

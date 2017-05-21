@@ -16,8 +16,14 @@ public class OdjavaPolozaja implements Serializable{
     @Column(name = "id")
     private Integer id;
 
-    private Integer korisnik_id;
-    private Integer lokacija_id;
+    @ManyToOne
+    @JoinColumn(name="id_korisnika")
+    private Korisnik korisnik;
+
+    @ManyToOne
+    @JoinColumn(name="id_lokacije")
+    private Lokacija lokacija;
+    
     private Time vrijeme_odjave;
     private Integer ispravnost_odjave;
 
@@ -25,9 +31,9 @@ public class OdjavaPolozaja implements Serializable{
 
     }
 
-    public OdjavaPolozaja(Integer korisnik_id, Integer lokacija_id, Time vrijeme_odjave, Integer ispravnost_odjave) {
-        this.korisnik_id = korisnik_id;
-        this.lokacija_id = lokacija_id;
+    public OdjavaPolozaja(Korisnik k, Lokacija l, Time vrijeme_odjave, Integer ispravnost_odjave) {
+        this.korisnik = k;
+        this.lokacija = l;
         this.vrijeme_odjave = vrijeme_odjave;
         this.ispravnost_odjave = ispravnost_odjave;
     }
@@ -40,20 +46,20 @@ public class OdjavaPolozaja implements Serializable{
         this.id = id;
     }
 
-    public Integer getKorisnikID() {
-        return korisnik_id;
+    public Korisnik getKorisnik() {
+        return korisnik;
     }
 
-    public void setKorisnikID(Integer korisnik_id) {
-        this.korisnik_id = korisnik_id;
+    public void setKorisnik(Korisnik k) {
+        this.korisnik = k;
     }
 
-    public Integer getLokacijaID() {
-        return lokacija_id;
+    public Lokacija getLokacija() {
+        return lokacija;
     }
 
-    public void setLokacijaID(Integer lokacija_id) {
-        this.lokacija_id = lokacija_id;
+    public void setLokacija(Lokacija l) {
+        this.lokacija = l;
     }
 
     public Time getVrijemeOdjave() {

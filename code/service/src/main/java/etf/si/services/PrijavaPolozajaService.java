@@ -4,40 +4,39 @@ import org.springframework.stereotype.Service;
 
 import etf.si.models.PrijavaPolozaja;
 
-import etf.si.repositories.OdjavaPolozajaRepository;
 import etf.si.repositories.PrijavaPolozajaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 
 @Service
 public class PrijavaPolozajaService {
-    @Autowired
-    private static PrijavaPolozajaRepository PrijavaPolozaja;
 
-    public static Iterable<PrijavaPolozaja> findAll(){
-        return PrijavaPolozaja.findAll();
+    @Autowired
+    private PrijavaPolozajaRepository prijavaPolozajaRepository;
+
+    public Iterable<PrijavaPolozaja> findAll(){
+        return prijavaPolozajaRepository.findAll();
     }
 
-    public static PrijavaPolozaja findPrijavaPolozaja(Integer id){
-        return PrijavaPolozaja.findOne(id);
+    public PrijavaPolozaja findPrijavaPolozaja(Integer id){
+        return prijavaPolozajaRepository.findOne(id);
     }
 
     public void addPrijavaPolozaja(PrijavaPolozaja p){
-        PrijavaPolozaja.save(p);
+        prijavaPolozajaRepository.save(p);
     }
 
     public void deletePrijavaPolozaja(PrijavaPolozaja p){
-        PrijavaPolozaja.delete(p);
+        prijavaPolozajaRepository.delete(p.getId());
     }
 
-    public static void deletePrijavaPolozaja(Integer id){
-        PrijavaPolozaja.delete(PrijavaPolozaja.findOne(id));
+    public void deletePrijavaPolozaja(Integer id){
+        prijavaPolozajaRepository.delete(prijavaPolozajaRepository.findOne(id));
     }
 
     public Boolean updatePrijavaPolozaja(PrijavaPolozaja p){
-        PrijavaPolozaja.save(p);
+        prijavaPolozajaRepository.save(p);
         return true;
     }
 }

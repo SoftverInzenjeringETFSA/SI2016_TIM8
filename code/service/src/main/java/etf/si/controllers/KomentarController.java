@@ -17,7 +17,7 @@ import etf.si.services.KorisnikService;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path= "/korisnici")
+@RequestMapping(path= "/komentari")
 public class KomentarController {
 
     @Autowired

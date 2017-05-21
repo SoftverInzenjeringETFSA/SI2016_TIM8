@@ -7,7 +7,9 @@ import etf.si.models.Korisnik;
 import etf.si.models.Lokacija;
 import etf.si.repositories.KorisnikRepository;
 import etf.si.repositories.LokacijaRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LokacijaService {
 
 	@Autowired
