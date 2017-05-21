@@ -45,7 +45,7 @@ CREATE TABLE `korisnik` (
   `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `ime_prezime` varchar(255) NOT NULL,
+  `ime` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `broj_tacnih_prijava` int(11) NOT NULL,
   `broj_netacnih_prijava` int(11) NOT NULL,
