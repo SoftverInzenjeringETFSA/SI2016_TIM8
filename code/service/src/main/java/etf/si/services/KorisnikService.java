@@ -2,6 +2,8 @@ package etf.si.services;
 
 import etf.si.models.Korisnik;
 import etf.si.repositories.KorisnikRepository;
+
+import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,7 +41,17 @@ public class KorisnikService {
         userRepo.save(k);
         return true;
     }
+    public Boolean registerKorisnik(Korisnik korisnik) {
+    	
+        if(userRepo.findByUsername(korisnik.getUsername()) != null) {
+            throw new ServiceException("Korisnik sa datim username-om vec postoji!");
+        }
 
+        Korisnik korisnik1 = userRepo.save(korisnik);
+
+        return korisnik1 != null;
+
+    }
     /* public Boolean isAdmin(Integer id){
         if (userRepo.findOne(id).getAdmin()) return true;
         return false;

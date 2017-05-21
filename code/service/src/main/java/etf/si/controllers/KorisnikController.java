@@ -2,7 +2,11 @@ package etf.si.controllers;
 
 import etf.si.models.Korisnik;
 import etf.si.services.KorisnikService;
+
+import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,4 +44,26 @@ public class KorisnikController {
         userService.deleteKorisnik(id);
         return "Done";
     }
+    
+    
+    
+    
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public ResponseEntity register(@RequestBody Korisnik korisnik)
+    {
+        try {
+                return ResponseEntity.status(HttpStatus.OK)
+                        .body(userService.registerKorisnik(korisnik));
+               
+        }
+        catch (ServiceException e){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                                .body(e.getLocalizedMessage());
+        }
+
+
+    }
+    
+    
+    
 }
