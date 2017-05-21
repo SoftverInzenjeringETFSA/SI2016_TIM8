@@ -1,2 +1,13 @@
-PREGLED PATROLA
+<ul>
+    {{#each model as |patrola|}}
+    <li>
+        <ul>
+            <li>{{patrola.vrijeme_prijave}}</li>
+            <li>{{patrola.lokacija.naziv}}</li>
+            <li>{{patrola.vrsta_kontrole}}</li>
+        </ul>
+    </li>
+    {{/each}}
+</ul>
+
 {{outlet}}
