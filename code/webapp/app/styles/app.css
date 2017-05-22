@@ -25,7 +25,7 @@ form
 
 .bg-info
 {
-  margin: 0px auto;
+  margin: 55px auto;
   width: 700px;
   height: 50px;
   padding-top: 15px;
@@ -34,7 +34,6 @@ form
   margin-bottom: 30px;
   background-color: #3C6A9D;
   color: white;
-  margin-top: 30px;
 }
 
 .navbar-fixed-top
@@ -107,7 +106,8 @@ form
 
 .onama
 {
-	padding-top: 25px;
+	margin: 55px auto;
+  width: 90%;
 }
 
 .patrola
