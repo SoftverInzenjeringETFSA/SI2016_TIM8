@@ -17,4 +17,5 @@ public interface KorisnikRepository extends CrudRepository<Korisnik, Integer> {
     // public Korisnik findByEmail(String email);
     public Korisnik findByUsername(String username);
     public List<Korisnik> findAll();
+    public Korisnik findByUsernameAndPassword(String username, String password);
 }
