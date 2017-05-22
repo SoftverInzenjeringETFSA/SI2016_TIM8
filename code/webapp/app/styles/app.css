@@ -40,7 +40,6 @@ form
 .navbar-fixed-top
 {
     height: 120px;
-    padding-right: 150px;
 }
 
 
@@ -113,7 +112,12 @@ form
 
 .tabelica
 {
-  margin-top: 55px;
-  margin-left: 75px;
-  width: 1150px;
+  width: 80%;
+  margin: 55px auto;
+}
+
+.dugmic
+{
+  width: 80%;
+  margin: 55px auto;
 }
