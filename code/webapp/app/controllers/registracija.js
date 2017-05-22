@@ -11,20 +11,25 @@ export default Ember.Controller.extend({
 
     actions: {
     	register: function(){
+			let podaci=JSON.stringify({
+					//'korisnik' : {
+						ime:  this.get('ime'),
+						username:  this.get('username'),
+						password: this.get('password'),
+						email: this.get('email'),
+						broj_tacnih_prijava: 0,
+						broj_netacnih_prijava: 0,
+						admin: 0
+						//super-admin: 0
+					//} 
+				});
 			Ember.$.ajax({
 				url: "http://localhost:8080/korisnici/register",
 				type: "POST",
 				contentType: "application/json",
-				data: JSON.stringify({
-					"korisnik" : {
-						"ime":  this.get('ime'),
-						"username":  this.get('username'),
-						"password": this.get('password'),
-						"email": this.get('email'),
-					} 
-				})
+				data: podaci
 			}).then(() => {
-				console.log("uspjelo");
+				alert("Registracija uspjela");
 			}).catch(function(error) {
 				alert(error.error);
     		  });
