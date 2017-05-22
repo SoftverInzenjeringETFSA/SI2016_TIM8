@@ -40,6 +40,7 @@ form
 .navbar-fixed-top
 {
     height: 120px;
+    padding-right: 150px;
 }
 
 
@@ -58,7 +59,7 @@ form
 
 #meni1
 {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 #meni1 li
@@ -108,4 +109,11 @@ form
 .onama
 {
 	padding-top: 25px;
+}
+
+.tabelica
+{
+  margin-top: 55px;
+  margin-left: 75px;
+  width: 1150px;
 }
