@@ -15,6 +15,7 @@ public interface PrijavaPolozajaRepository extends CrudRepository<PrijavaPolozaj
 
     List<PrijavaPolozaja> findAll();
 
-//    public List<PrijavaPolozaja> findAllWithLocation();
+
+    //public List<PrijavaPolozaja> findAllWithLocation();
 
 }

@@ -42,7 +42,7 @@ public class KorisnikService {
         return true;
     }
     public Boolean registerKorisnik(Korisnik korisnik) {
-    	
+
         if(userRepo.findByUsername(korisnik.getUsername()) != null) {
             throw new ServiceException("Korisnik sa datim username-om vec postoji!");
         }

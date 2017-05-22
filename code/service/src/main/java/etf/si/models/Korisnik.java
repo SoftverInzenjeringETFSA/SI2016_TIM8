@@ -52,6 +52,18 @@ public class Korisnik implements Serializable {
         this.username = username;
         this.password = password;
         this.email = email;
+        this.admin = false;
+        this.superAdmin = false;
+    }
+
+    public Korisnik (Korisnik k){
+
+        this.ime = k.getIme();
+        this.username = k.getUsername();
+        this.password = k.getPassword();
+        this.email = k.getEmail();
+        if(k.getAdmin() == null) this.admin = false;
+        if(k.getSuperAdmin() == null) this.superAdmin = false;
     }
 
     public Integer getId() {

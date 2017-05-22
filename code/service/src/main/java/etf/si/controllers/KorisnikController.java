@@ -45,11 +45,8 @@ public class KorisnikController {
         return "Done";
     }
     
-    
-    
-    
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public ResponseEntity register(@RequestBody Korisnik korisnik)
+    public @ResponseBody ResponseEntity register(@RequestBody Korisnik korisnik)
     {
         try {
                 return ResponseEntity.status(HttpStatus.OK)
