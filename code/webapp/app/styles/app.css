@@ -77,7 +77,8 @@ form
 
 #meni2 li:hover:not(.active)
 {
-   background-color: #A9D0DA;
+   background-color: ##899BB5;
+   color: white;
 }
 
 
@@ -115,3 +116,25 @@ form
   margin: 55px auto;
   width: 80%;
 }
+
+.patrolaBtn
+{
+  margin: 55px auto;
+  width: 40%;
+}
+
+.btnCustom, .btnHoverBlue {
+  color: gray;
+  background-color: #F8F8F8;
+  border: none;
+  border-radius: 0;
+}
+
+.btnHoverBlue:hover {
+  color:white;
+  background-color: #3C6A9D;
+  border: none;
+  border-radius: 0;
+}
+
+
