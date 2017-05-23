@@ -14,5 +14,8 @@ Router.map(function() {
   this.route('kontakt');
   this.route('prijava');
   this.route('registracija');
+  this.route('prikazkomentara');
+  this.route('prikazkorisnika');
+  this.route('prikazadmina');
 });
 export default Router;
