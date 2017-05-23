@@ -58,7 +58,7 @@ form
 
 #meni1
 {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 #meni1 li
@@ -108,4 +108,10 @@ form
 .onama
 {
 	padding-top: 25px;
+}
+
+.patrola
+{
+  margin: 55px auto;
+  width: 80%;
 }
