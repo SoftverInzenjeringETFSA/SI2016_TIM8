@@ -23,8 +23,8 @@
           </ul>
           <ul class="nav navbar-nav navbar-right" id="meni2">
             {{#if session.isAuthenticated}}
-              <li>Dobrodošao/la  @{{ session.data.authenticated.korisnik.username }}</li>
-              <li {{action 'logout' on='click'}}>Log out</li>
+              <li><button type="button" class="disabled btn-lg btnCustom">Dobrodošao/la  @{{ session.data.authenticated.korisnik.username }}</button></li>
+              <li><button type="button" class="disabled btn-lg btnHoverBlue" {{action 'logout' on='click'}}>Log Out</button></li>
             {{else}}
               <li>{{#link-to 'prijava'}}Prijavi se{{/link-to}}</li>
               <li>{{#link-to 'registracija'}}Registruj se {{/link-to}}</li>
