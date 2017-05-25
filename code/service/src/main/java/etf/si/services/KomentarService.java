@@ -8,6 +8,9 @@ import etf.si.models.Korisnik;
 import etf.si.repositories.KomentarRepository;
 import etf.si.repositories.KorisnikRepository;
 
+import java.util.LinkedList;
+import java.util.List;
+
 @Service
 public class KomentarService {
 
@@ -20,6 +23,15 @@ public class KomentarService {
 
     public Komentar findKomentar(Integer id){
         return userRepo.findOne(id);
+    }
+
+    public List<Komentar> findKomentarByLocation(Integer id){
+        List<Komentar> komentari = new LinkedList<Komentar>();;
+        Iterable<Komentar> sviKomentari = userRepo.findAll();
+        for (Komentar komentar : sviKomentari) {
+            if (id == komentar.getLokacija().getId()){ komentari.add(komentar);}
+        }
+        return komentari;
     }
 
     public void addKomentar(Komentar k){
@@ -40,4 +52,3 @@ public class KomentarService {
     }
 
 }
-

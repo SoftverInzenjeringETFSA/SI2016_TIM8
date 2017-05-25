@@ -16,7 +16,7 @@
       <td>{{patrola.vrijeme_prijave}}</td>
       <td>{{patrola.lokacija.naziv}}</td>
       <td>{{patrola.vrsta_kontrole}}</td>
-      <td><a href="#" class="btn btn-primary btn-sm" role="button">Pogledaj komentare</a></td>
+      <td>{{#link-to 'prikazkomentara'}}Pogledaj komentare{{/link-to}}</td>
       <td><input class="btn btn-primary btn-sm" type="submit" value="Odjavi patrolu"></td>
     </tr>
     {{/each}}

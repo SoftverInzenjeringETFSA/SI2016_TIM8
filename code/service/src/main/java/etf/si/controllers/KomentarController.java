@@ -29,14 +29,19 @@ public class KomentarController {
 
     @RequestMapping(path="/get/all", method = RequestMethod.GET)
     public List<Komentar> findAll() {
-        List<Komentar> korisnici;
-        korisnici = (List<Komentar>) userService.findAll();
-        return korisnici;
+        List<Komentar> komentari;
+        komentari = (List<Komentar>) userService.findAll();
+        return komentari;
     }
 
     @RequestMapping(path="/get/{id}", method = RequestMethod.GET)
     public Komentar getKomentar(@PathVariable("id") Integer id){
         return userService.findKomentar(id);
+    }
+
+    @RequestMapping(path="/getbylocation/{id}", method = RequestMethod.GET)
+    public List<Komentar> getKomentarByLocation(@PathVariable("id") Integer id){
+        return userService.findKomentarByLocation(id);
     }
 
     @RequestMapping(path = "/delete", method = RequestMethod.GET)
