@@ -32,7 +32,7 @@ USE  tim8;
 CREATE TABLE `komentar` (
   `id` int(11) NOT NULL,
   `id_korisnika` int(11) NOT NULL,
-  `id_lokacije` int(11) NOT NULL,
+  `id_patrole` int(11) NOT NULL,
   `tekst` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
