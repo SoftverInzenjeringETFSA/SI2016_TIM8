@@ -99,7 +99,7 @@ INSERT INTO `lokacija` (`id`, `naziv`) VALUES
 CREATE TABLE `prijavapolozaja` (
   `id` int(11) NOT NULL,
   `id_korisnika` int(11) NOT NULL,
-  `id_patrole` int(11) NOT NULL,
+  `id_lokacije` int(11) NOT NULL,
   `vrsta_kontrole` varchar(255) DEFAULT NULL,
   `vrijeme_prijave` time NOT NULL,
   `ispravnost_prijave` int(2) NOT NULL
@@ -109,7 +109,7 @@ CREATE TABLE `prijavapolozaja` (
 -- Dumping data for table `prijavapolozaja`
 --
 
-INSERT INTO `prijavapolozaja` (`id`, `id_korisnika`, `id_patrole`, `vrsta_kontrole`, `vrijeme_prijave`, `ispravnost_prijave`) VALUES
+INSERT INTO `prijavapolozaja` (`id`, `id_korisnika`, `id_lokacije`, `vrsta_kontrole`, `vrijeme_prijave`, `ispravnost_prijave`) VALUES
 (1, 1, 1, 'probna', '04:11:39', 1);
 
 --
@@ -122,7 +122,7 @@ INSERT INTO `prijavapolozaja` (`id`, `id_korisnika`, `id_patrole`, `vrsta_kontro
 ALTER TABLE `komentar`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_korisnika` (`id_korisnika`),
-  ADD KEY `id_lokacije` (`id_lokacije`);
+  ADD KEY `id_patrole` (`id_patrole`);
 
 --
 -- Indexes for table `korisnik`
@@ -142,7 +142,7 @@ ALTER TABLE `lokacija`
 ALTER TABLE `prijavapolozaja`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_korisnika` (`id_korisnika`),
-  ADD KEY `id_patrole` (`id_patrole`);
+  ADD KEY `id_lokacije` (`id_lokacije`);
 
 --
 -- AUTO_INCREMENT for dumped tables
