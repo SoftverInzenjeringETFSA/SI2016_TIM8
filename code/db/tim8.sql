@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 -- Database: `tim8`
 --
 
+CREATE DATABASE IF NOT EXISTS tim8;
+USE  tim8;
+
 -- --------------------------------------------------------
 
 --
@@ -96,7 +99,7 @@ INSERT INTO `lokacija` (`id`, `naziv`) VALUES
 CREATE TABLE `prijavapolozaja` (
   `id` int(11) NOT NULL,
   `id_korisnika` int(11) NOT NULL,
-  `id_lokacije` int(11) NOT NULL,
+  `id_patrole` int(11) NOT NULL,
   `vrsta_kontrole` varchar(255) DEFAULT NULL,
   `vrijeme_prijave` time NOT NULL,
   `ispravnost_prijave` int(2) NOT NULL
@@ -106,7 +109,7 @@ CREATE TABLE `prijavapolozaja` (
 -- Dumping data for table `prijavapolozaja`
 --
 
-INSERT INTO `prijavapolozaja` (`id`, `id_korisnika`, `id_lokacije`, `vrsta_kontrole`, `vrijeme_prijave`, `ispravnost_prijave`) VALUES
+INSERT INTO `prijavapolozaja` (`id`, `id_korisnika`, `id_patrole`, `vrsta_kontrole`, `vrijeme_prijave`, `ispravnost_prijave`) VALUES
 (1, 1, 1, 'probna', '04:11:39', 1);
 
 --
@@ -139,7 +142,7 @@ ALTER TABLE `lokacija`
 ALTER TABLE `prijavapolozaja`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_korisnika` (`id_korisnika`),
-  ADD KEY `id_lokacije` (`id_lokacije`);
+  ADD KEY `id_patrole` (`id_patrole`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -174,7 +177,7 @@ ALTER TABLE `prijavapolozaja`
 --
 ALTER TABLE `komentar`
   ADD CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
-  ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`id_lokacije`) REFERENCES `lokacija` (`id`);
+  ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`id_patrole`) REFERENCES `prijava_polozaja` (`id`);
 
 --
 -- Constraints for table `prijavapolozaja`
