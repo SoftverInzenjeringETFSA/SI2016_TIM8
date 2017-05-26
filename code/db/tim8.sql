@@ -57,11 +57,8 @@ CREATE TABLE `korisnik` (
 --
 
 INSERT INTO `korisnik` (`id`, `username`, `password`, `ime`, `email`, `broj_tacnih_prijava`, `broj_netacnih_prijava`, `ocjena`, `admin`, `super_admin`) VALUES
-(1, 'mzuza1', 'milan', 'milan', 'milan.z@gmail.com', 3, 2, 3, b'0', b'0'),
-(3, 'fasd', 'fasd', 'fdsa', 'fdsa@fasd.com', NULL, NULL, NULL, b'0', NULL),
-(4, 'fdas', 'fsad', 'fdsa', 'fasd@dfa.nu', NULL, NULL, NULL, b'0', NULL),
-(5, 'fdasfdsgsdf', 'sdfsaf', 'fdadfs', 'fdsa@fasd.com', NULL, NULL, NULL, b'0', NULL),
-(6, 'fsdhsvsc', 'dvgds', 'fas', 'fsdg@fas.co', NULL, NULL, NULL, b'0', NULL);
+(1, 'mzuza1', 'milan', 'Milan Zuza', 'milan.z@gmail.com', 3, 2, 3, b'0', b'0'),
+(2, 'lzecevic1', 'lejla', '123', 'lejlaz@gmail.com', 3, 2, 3, b'0', b'0');
 
 -- --------------------------------------------------------
 
@@ -79,22 +76,16 @@ CREATE TABLE `lokacija` (
 --
 
 INSERT INTO `lokacija` (`id`, `naziv`) VALUES
-(1, 'sarajevo');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `odjavapolozaja`
---
-
-CREATE TABLE `odjavapolozaja` (
-  `id` int(11) NOT NULL,
-  `id_korisnika` int(11) NOT NULL,
-  `id_lokacije` int(11) NOT NULL,
-  `vrijeme_odjave` int(11) NOT NULL,
-  `ispravnost_odjave` int(2) NOT NULL,
-  `id_prijave` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+(1, 'Ilidza'),
+(2, 'Stup'),
+(3, 'Butmir'),
+(4, 'Grbavica'),
+(5, 'Alipasino Polje'),
+(6, 'Marijin Dvor'),
+(7, 'Skenderija'),
+(8, 'Cobanija'),
+(9, 'Drvenija'),
+(10, 'Bascarsija');
 
 -- --------------------------------------------------------
 
@@ -143,15 +134,6 @@ ALTER TABLE `lokacija`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `odjavapolozaja`
---
-ALTER TABLE `odjavapolozaja`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `id_korisnika` (`id_korisnika`),
-  ADD KEY `id_lokacije` (`id_lokacije`),
-  ADD KEY `id_prijave` (`id_prijave`);
-
---
 -- Indexes for table `prijavapolozaja`
 --
 ALTER TABLE `prijavapolozaja`
@@ -179,11 +161,6 @@ ALTER TABLE `korisnik`
 ALTER TABLE `lokacija`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `odjavapolozaja`
---
-ALTER TABLE `odjavapolozaja`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
 -- AUTO_INCREMENT for table `prijavapolozaja`
 --
 ALTER TABLE `prijavapolozaja`
@@ -198,14 +175,6 @@ ALTER TABLE `prijavapolozaja`
 ALTER TABLE `komentar`
   ADD CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
   ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`id_lokacije`) REFERENCES `lokacija` (`id`);
-
---
--- Constraints for table `odjavapolozaja`
---
-ALTER TABLE `odjavapolozaja`
-  ADD CONSTRAINT `odjavapolozaja_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
-  ADD CONSTRAINT `odjavapolozaja_ibfk_2` FOREIGN KEY (`id_lokacije`) REFERENCES `lokacija` (`id`),
-  ADD CONSTRAINT `odjavapolozaja_ibfk_3` FOREIGN KEY (`id_prijave`) REFERENCES `prijavapolozaja` (`id`);
 
 --
 -- Constraints for table `prijavapolozaja`

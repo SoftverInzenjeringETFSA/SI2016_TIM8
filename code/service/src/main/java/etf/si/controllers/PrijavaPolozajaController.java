@@ -1,6 +1,5 @@
 package etf.si.controllers;
 
-import etf.si.services.OdjavaPolozajaService;
 import etf.si.services.PrijavaPolozajaService;
 
 import org.springframework.beans.factory.annotation.Autowired;
