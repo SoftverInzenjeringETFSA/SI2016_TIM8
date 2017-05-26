@@ -177,7 +177,7 @@ ALTER TABLE `prijavapolozaja`
 --
 ALTER TABLE `komentar`
   ADD CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_korisnika`) REFERENCES `korisnik` (`id`),
-  ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`id_patrole`) REFERENCES `prijava_polozaja` (`id`);
+  ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`id_patrole`) REFERENCES `prijavapolozaja` (`id`);
 
 --
 -- Constraints for table `prijavapolozaja`
