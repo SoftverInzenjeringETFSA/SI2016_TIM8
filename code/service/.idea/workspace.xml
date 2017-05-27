@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="623a2d10-dfa1-43ce-81b9-2631960fec99" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/app/styles/app.css" afterPath="$PROJECT_DIR$/../webapp/app/styles/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/etf/si/models/Komentar.java" afterPath="$PROJECT_DIR$/src/main/java/etf/si/models/Komentar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/app/controllers/pregledpatrola.js" afterPath="$PROJECT_DIR$/../webapp/app/controllers/pregledpatrola.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/app/router.js" afterPath="$PROJECT_DIR$/../webapp/app/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/app/templates/pregledpatrola.hbs" afterPath="$PROJECT_DIR$/../webapp/app/templates/pregledpatrola.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,91 +20,32 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KorisnikController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KorisnikController.java">
+      <file leaf-file-name="Komentar.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/Komentar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KorisnikService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/KorisnikService.java">
+      <file leaf-file-name="KomentarService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/KomentarService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OdjavaPolozajaService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/OdjavaPolozajaService.java">
+      <file leaf-file-name="KomentarController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KomentarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#446#447#0" expanded="false" />
-                <element signature="e#493#494#0" expanded="false" />
-                <element signature="e#559#560#0" expanded="false" />
-                <element signature="e#608#609#0" expanded="false" />
-                <element signature="e#662#663#0" expanded="false" />
-                <element signature="e#700#701#0" expanded="false" />
-                <element signature="e#757#758#0" expanded="false" />
-                <element signature="e#797#798#0" expanded="false" />
-                <element signature="e#855#856#0" expanded="false" />
-                <element signature="e#920#921#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Korisnik.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/Korisnik.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding>
-                <marker date="1495463907873" expanded="false" signature="1785:1796" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="1811:1817" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="1852:1863" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="1876:1882" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="1910:1921" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="1932:1938" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="1974:1985" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2000:2006" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2039:2050" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2066:2072" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2118:2129" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2154:2160" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2193:2204" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2220:2226" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2272:2283" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2308:2314" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2344:2355" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2368:2374" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2414:2425" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2444:2450" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2493:2504" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2529:2535" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2600:2611" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2654:2660" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2705:2716" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2743:2749" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2818:2829" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2876:2882" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2913:2924" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="2938:2944" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="2986:2997" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="3018:3024" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="3055:3066" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="3079:3085" ph=" }" />
-                <marker date="1495463907873" expanded="false" signature="3126:3137" ph=" { " />
-                <marker date="1495463907873" expanded="false" signature="3156:3162" ph=" }" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,6 +90,8 @@
         <option value="$PROJECT_DIR$/src/main/java/etf/si/models/Korisnik.java" />
         <option value="$PROJECT_DIR$/src/main/java/etf/si/services/KorisnikService.java" />
         <option value="$PROJECT_DIR$/src/main/java/etf/si/controllers/KorisnikController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/etf/si/services/KomentarService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/etf/si/models/Komentar.java" />
       </list>
     </option>
   </component>
@@ -162,10 +109,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,8 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,24 +139,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,7 +312,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -820,14 +749,16 @@
       <workItem from="1495366872245" duration="7629000" />
       <workItem from="1495447716840" duration="4433000" />
       <workItem from="1495487364705" duration="641000" />
+      <workItem from="1495905708778" duration="2208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17991000" />
+    <option name="totallyTimeSpent" value="20199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="20" width="1400" height="820" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -835,16 +766,16 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33380282" sideWeight="0.11199422" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1829653" sideWeight="0.11713031" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33380282" sideWeight="0.8880058" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1829653" sideWeight="0.8828697" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -877,21 +808,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/repositories/KomentarRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KomentarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/LokacijaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -899,18 +815,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaja.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1268#1269#0" expanded="false" />
-            <element signature="e#1301#1302#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaja.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/KorisnikService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -958,9 +863,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -968,59 +871,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1495463907873" expanded="false" signature="1785:1796" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1811:1817" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1852:1863" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1876:1882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1910:1921" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1932:1938" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1974:1985" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2000:2006" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2039:2050" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2066:2072" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2118:2129" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2154:2160" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2193:2204" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2220:2226" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2272:2283" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2308:2314" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2344:2355" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2368:2374" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2414:2425" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2444:2450" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2493:2504" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2529:2535" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2600:2611" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2654:2660" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2705:2716" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2743:2749" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2818:2829" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2876:2882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2913:2924" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2938:2944" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2986:2997" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3018:3024" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3055:3066" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3079:3085" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3126:3137" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3156:3162" ph=" }" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaja.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1268#1269#0" expanded="false" />
-            <element signature="e#1301#1302#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaja.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/repositories/KorisnikRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1043,20 +898,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/OdjavaPolozajaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/repositories/OdjavaPolozajaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/OdjavaPolozajaService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/repositories/OdjavaPolozajaRepository.java" />
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/1.4.1.RELEASE/spring-boot-dependencies-1.4.1.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17510">
@@ -1071,55 +914,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/OdjavaPolozajaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/OdjavaPolozajaController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/Korisnik.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495463907873" expanded="false" signature="1785:1796" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1811:1817" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1852:1863" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1876:1882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1910:1921" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1932:1938" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1974:1985" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2000:2006" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2039:2050" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2066:2072" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2118:2129" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2154:2160" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2193:2204" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2220:2226" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2272:2283" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2308:2314" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2344:2355" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2368:2374" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2414:2425" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2444:2450" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2493:2504" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2529:2535" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2600:2611" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2654:2660" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2705:2716" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2743:2749" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2818:2829" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2876:2882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2913:2924" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2938:2944" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2986:2997" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3018:3024" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3055:3066" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3079:3085" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3126:3137" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3156:3162" ph=" }" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,44 +963,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495463907873" expanded="false" signature="1785:1796" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1811:1817" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1852:1863" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1876:1882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1910:1921" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1932:1938" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1974:1985" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2000:2006" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2039:2050" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2066:2072" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2118:2129" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2154:2160" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2193:2204" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2220:2226" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2272:2283" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2308:2314" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2344:2355" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2368:2374" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2414:2425" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2444:2450" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2493:2504" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2529:2535" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2600:2611" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2654:2660" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2705:2716" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2743:2749" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2818:2829" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2876:2882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2913:2924" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2938:2944" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2986:2997" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3018:3024" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3055:3066" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3079:3085" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3126:3137" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3156:3162" ph=" }" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,20 +1006,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaj.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/OdjavaPolozajaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220">
-          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/repositories/OdjavaPolozajaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/OdjavaPolozajaController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/repositories/OdjavaPolozajaRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/LokacijaService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1268,14 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KomentarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,25 +1057,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaja.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/OdjavaPolozaja.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/OdjavaPolozajaService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KorisnikController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1268#1269#0" expanded="false" />
-            <element signature="e#1301#1302#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="884">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/PrijavaPolozaja.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/KorisnikService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="246">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,86 +1079,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/OdjavaPolozajaService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/PrijavaPolozaja.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
-            <element signature="e#493#494#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#700#701#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#920#921#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/Korisnik.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
+        <state relative-caret-position="1113">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <marker date="1495463907873" expanded="false" signature="1785:1796" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1811:1817" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1852:1863" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1876:1882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1910:1921" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="1932:1938" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="1974:1985" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2000:2006" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2039:2050" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2066:2072" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2118:2129" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2154:2160" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2193:2204" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2220:2226" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2272:2283" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2308:2314" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2344:2355" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2368:2374" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2414:2425" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2444:2450" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2493:2504" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2529:2535" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2600:2611" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2654:2660" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2705:2716" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2743:2749" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2818:2829" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2876:2882" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2913:2924" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="2938:2944" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="2986:2997" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3018:3024" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3055:3066" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3079:3085" ph=" }" />
-            <marker date="1495463907873" expanded="false" signature="3126:3137" ph=" { " />
-            <marker date="1495463907873" expanded="false" signature="3156:3162" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/KorisnikService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KorisnikController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/services/KomentarService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/controllers/KomentarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/etf/si/models/Komentar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>

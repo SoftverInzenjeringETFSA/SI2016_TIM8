@@ -48,6 +48,7 @@ public class Komentar implements Serializable {
 
 	public void setPatrola(PrijavaPolozaja p) { this.patrola = p; }
 	public PrijavaPolozaja getPatrola() { return this.patrola; }
+
 	public String getTekst() {
 		return tekst;
 	}
