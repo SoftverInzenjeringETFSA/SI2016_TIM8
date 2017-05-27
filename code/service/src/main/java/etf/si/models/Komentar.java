@@ -18,23 +18,23 @@ public class Komentar implements Serializable {
 	private Korisnik korisnik;
 
 	@ManyToOne
-	@JoinColumn(name="id_lokacije")
-	private Lokacija lokacija;
+	@JoinColumn(name="id_patrole")
+	private PrijavaPolozaja patrola;
 
     String tekst;
     public Komentar()
     {
     	
     }
-	public Komentar(Korisnik k, Lokacija l, String tekst) {
+	public Komentar(Korisnik k, PrijavaPolozaja p, String tekst) {
 		super();
 		this.korisnik = k;
-		this.lokacija = l;
+		this.patrola = p;
 		this.tekst = tekst;
 	}
 	@Override
 	public String toString() {
-		return "Komentar [id=" + id + ", Korisnik=" + korisnik + ", Lokacija=" + lokacija + ", tekst=" + tekst
+		return "Komentar [id=" + id + ", Korisnik=" + korisnik + ", Patrola=" + patrola + ", tekst=" + tekst
 				+ "]";
 	}
 
@@ -46,14 +46,8 @@ public class Komentar implements Serializable {
 		this.korisnik = k;
 	}
 
-	public Lokacija getLokacija() {
-		return lokacija;
-	}
-
-	public void setLokacija(Lokacija l) {
-		this.lokacija = l;
-	}
-
+	public void setPatrola(PrijavaPolozaja p) { this.patrola = p; }
+	public PrijavaPolozaja getPatrola() { return this.patrola; }
 	public String getTekst() {
 		return tekst;
 	}

@@ -29,7 +29,7 @@ public class KomentarService {
         List<Komentar> komentari = new LinkedList<Komentar>();;
         Iterable<Komentar> sviKomentari = userRepo.findAll();
         for (Komentar komentar : sviKomentari) {
-            if (id == komentar.getLokacija().getId()){ komentari.add(komentar);}
+            if (id == komentar.getPatrola().getId()){ komentari.add(komentar);}
         }
         return komentari;
     }
