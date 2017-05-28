@@ -1,5 +1,6 @@
 package etf.si.controllers;
 
+import etf.si.helpers.StringHelper;
 import etf.si.models.Korisnik;
 import etf.si.services.KorisnikService;
 
@@ -47,8 +48,15 @@ public class KorisnikController {
     public @ResponseBody ResponseEntity register(@RequestBody Korisnik korisnik)
     {
         try {
-                return ResponseEntity.status(HttpStatus.OK)
-                        .body(userService.registerKorisnik(korisnik));
+        	if (StringHelper.isNullOrWhiteSpace(korisnik.getIme())
+    			|| StringHelper.isNullOrWhiteSpace(korisnik.getEmail())
+    			|| StringHelper.isNullOrWhiteSpace(korisnik.getUsername())
+    			|| StringHelper.isNullOrWhiteSpace(korisnik.getPassword())) {
+        		throw new ServiceException("Jedno od polja nije popunjeno. Molimo pregledajte formu i popunite sva obavezna polja.");
+        	}
+        	
+        	return ResponseEntity.status(HttpStatus.OK)
+                    .body(userService.registerKorisnik(korisnik));
                
         }
         catch (ServiceException e){
