@@ -29,9 +29,7 @@ public class KorisnikController {
 
     @RequestMapping(path="/get/all", method = RequestMethod.GET)
     public List<Korisnik> findAll() {
-        List<Korisnik> korisnici;
-        korisnici = (List<Korisnik>) userService.findAll();
-        return korisnici;
+    	return (List<Korisnik>) userService.getByAdminAndSuperAdmin(false, false);
     }
 
     @RequestMapping(path="/get/{id}", method = RequestMethod.GET)
@@ -61,6 +59,9 @@ public class KorisnikController {
 
     }
     
-    
+    @RequestMapping(path="/admin", method = RequestMethod.GET)
+    public List<Korisnik> getAdmins() {
+        return (List<Korisnik>) userService.getByAdminAndSuperAdmin(true, false);
+    }
     
 }

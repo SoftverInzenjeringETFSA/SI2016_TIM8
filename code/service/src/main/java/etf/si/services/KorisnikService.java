@@ -3,9 +3,12 @@ package etf.si.services;
 import etf.si.models.Korisnik;
 import etf.si.repositories.KorisnikRepository;
 
+import java.util.List;
+
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 /**
  * Created by Lejla on 20/05/2017.
@@ -18,7 +21,13 @@ public class KorisnikService {
     private KorisnikRepository userRepo;
 
     public Iterable<Korisnik> findAll(){
-        return userRepo.findAll();
+        List<Korisnik> users = userRepo.findAll();
+        
+        for (int i = 0; i < users.size(); i ++) {
+        	users.get(i).setPassword(null);
+        }
+        
+        return users;
     }
 
     public Korisnik findKorisnik(Integer id){
@@ -52,6 +61,17 @@ public class KorisnikService {
         return korisnik1 != null;
 
     }
+    
+    public Iterable<Korisnik> getByAdminAndSuperAdmin(Boolean admin, Boolean superAdmin){
+    	List<Korisnik> users = userRepo.findByAdminAndSuperAdmin(admin, superAdmin);
+        
+        for (int i = 0; i < users.size(); i ++) {
+        	users.get(i).setPassword(null);
+        }
+        
+        return users;
+    }
+    
     /* public Boolean isAdmin(Integer id){
         if (userRepo.findOne(id).getAdmin()) return true;
         return false;

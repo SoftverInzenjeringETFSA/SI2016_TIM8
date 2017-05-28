@@ -16,7 +16,13 @@
         <div id="navbar" class="navbar-collapse collapse" id="meni">
           <ul class="nav navbar-nav" id="meni1">
             <li>{{#link-to 'početna'}}Početna{{/link-to}}</li>
-            <li>{{#link-to 'pregledpatrola'}}Pregled patrola{{/link-to}}</li>
+            {{#if session.isAuthenticated}}
+              <li>{{#link-to 'pregledpatrola'}}Pregled patrola{{/link-to}}</li>
+              <li>{{#link-to 'prikazkorisnika'}}Korisnici{{/link-to}}</li>
+              {{#if session.data.authenticated.korisnik.superAdmin}}
+                <li>{{#link-to 'prikazadmina'}}Administratori{{/link-to}}</li>
+              {{/if}}
+            {{/if}}
             <li>{{#link-to 'pomoć'}}Pomoć{{/link-to}}</li>
             <li>{{#link-to 'onama'}}O nama{{/link-to}}</li>
             <li>{{#link-to 'kontakt'}}Kontakt{{/link-to}}</li>
