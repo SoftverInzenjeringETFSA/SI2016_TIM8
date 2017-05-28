@@ -17,5 +17,6 @@ Router.map(function() {
   this.route('prikazkomentara');
   this.route('prikazkorisnika');
   this.route('prikazadmina');
+  this.route('novapatrola');
 });
 export default Router;

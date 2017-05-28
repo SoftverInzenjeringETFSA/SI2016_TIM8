@@ -6,5 +6,9 @@ export default Ember.Controller.extend({
     	uklonipatrolu: function(id){
 			this.get('ajax').request('http://localhost:8080/patrole/delete?id='+id, { method: 'GET' });
     	}
+		,
+		dodajpatrolu: function(id){
+			window.open('novapatrola');
+			}
     }
 });
