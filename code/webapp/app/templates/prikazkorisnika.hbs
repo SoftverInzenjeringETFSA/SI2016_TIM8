@@ -18,6 +18,7 @@
       <td>{{user.brojTacnihPrijava}}</td>
       <td>{{user.brojNetacnihPrijava}}</td>
       <td>{{user.ocjena}}</td>
+	  <td><input class="btn btn-primary btn-sm" type="submit" value="Blokiraj korisnika" {{action 'blokirajkorisnika' user.id}}></td>
     </tr>
     {{/each}}
   </tbody>
